@@ -8,15 +8,22 @@
 
 import UIKit
 import SwiftyJSON
+import Kingfisher
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var bigHade: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let model = APIModel.share
         model.queryRandomUser { (respons, error) in
             let json = JSON(respons as! Data)
-            print(json["results"].arrayValue[0]["name"]["first"].stringValue)
+            let imageString  = json["results"].arrayValue[0]["picture"]["large"].stringValue
+            if let url = URL(string: imageString){
+                self.bigHade.kf.setImage(with: url)
+            }
+            
+            
         }
         
     }
