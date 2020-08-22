@@ -19,28 +19,27 @@ class APIModel{
     func queryRandomUser(completion:@escaping (_ Data:Any?,_ respError: Error?)->())->(){
         
         DispatchQueue.global().async {
-
             let url = self.apiURL + "/api"
-            
             AF.request(url,
                        method: .get,
                        parameters: nil,
                        encoding: URLEncoding.default,
                        headers: nil)
-                
-                
                 .responseJSON { (respons) in
                     
-                    if let error = respons.error{
-                        return completion(nil,error)
-                    }else{
-                        print("get!")
-                        return completion(respons.data,nil)
+                    DispatchQueue.main.async {
+                        if respons.response?.statusCode == 200{
+                            if let error = respons.error{
+                                return completion(nil,error)
+                            }else{
+                                print("get!")
+                                return completion(respons.data,nil)
+                            }
+                        }else{
+                            return completion(nil,respons.error)
+                        }
                     }
             }
-        
-            
-            
         
         }
     }

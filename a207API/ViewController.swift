@@ -15,6 +15,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUser()
+ 
+        
+    }
+
+    @IBAction func nextUser(_ sender: Any) {
+        updateUser()
+    }
+    
+    func updateUser(){
         let model = APIModel.share
         model.queryRandomUser { (respons, error) in
             let json = JSON(respons as! Data)
@@ -22,12 +32,8 @@ class ViewController: UIViewController {
             if let url = URL(string: imageString){
                 self.bigHade.kf.setImage(with: url)
             }
-            
-            
         }
-        
     }
-
-
+    
 }
 
