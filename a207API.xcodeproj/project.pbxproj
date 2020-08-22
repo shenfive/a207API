@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225B302428C4996C4439AFF2 /* Pods_a207API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F4F1C58C6A60EADD3ECD82C /* Pods_a207API.framework */; };
 		BAA1328124F0F5120025C8C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1328024F0F5120025C8C4 /* AppDelegate.swift */; };
 		BAA1328324F0F5120025C8C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1328224F0F5120025C8C4 /* SceneDelegate.swift */; };
 		BAA1328524F0F5120025C8C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1328424F0F5120025C8C4 /* ViewController.swift */; };
 		BAA1328824F0F5120025C8C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1328624F0F5120025C8C4 /* Main.storyboard */; };
 		BAA1328A24F0F5140025C8C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA1328924F0F5140025C8C4 /* Assets.xcassets */; };
 		BAA1328D24F0F5140025C8C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1328B24F0F5140025C8C4 /* LaunchScreen.storyboard */; };
+		BAA1329524F0F93E0025C8C4 /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA1329424F0F93E0025C8C4 /* APIModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39BBE70E16F1137DEAC319D0 /* Pods-a207API.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207API.release.xcconfig"; path = "Target Support Files/Pods-a207API/Pods-a207API.release.xcconfig"; sourceTree = "<group>"; };
+		6F4F1C58C6A60EADD3ECD82C /* Pods_a207API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a207API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA1327D24F0F5120025C8C4 /* a207API.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a207API.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA1328024F0F5120025C8C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA1328224F0F5120025C8C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		BAA1328924F0F5140025C8C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA1328C24F0F5140025C8C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA1328E24F0F5140025C8C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA1329424F0F93E0025C8C4 /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		C6B69C0171DD9F1786D3A687 /* Pods-a207API.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a207API.debug.xcconfig"; path = "Target Support Files/Pods-a207API/Pods-a207API.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				225B302428C4996C4439AFF2 /* Pods_a207API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37EC66E0C900983E7ED9FF03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F4F1C58C6A60EADD3ECD82C /* Pods_a207API.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAA1327424F0F5120025C8C4 = {
 			isa = PBXGroup;
 			children = (
 				BAA1327F24F0F5120025C8C4 /* a207API */,
 				BAA1327E24F0F5120025C8C4 /* Products */,
+				D338C5C3A23BA19F9B2224D2 /* Pods */,
+				37EC66E0C900983E7ED9FF03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,18 @@
 				BAA1328924F0F5140025C8C4 /* Assets.xcassets */,
 				BAA1328B24F0F5140025C8C4 /* LaunchScreen.storyboard */,
 				BAA1328E24F0F5140025C8C4 /* Info.plist */,
+				BAA1329424F0F93E0025C8C4 /* APIModel.swift */,
 			);
 			path = a207API;
+			sourceTree = "<group>";
+		};
+		D338C5C3A23BA19F9B2224D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6B69C0171DD9F1786D3A687 /* Pods-a207API.debug.xcconfig */,
+				39BBE70E16F1137DEAC319D0 /* Pods-a207API.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAA1329124F0F5140025C8C4 /* Build configuration list for PBXNativeTarget "a207API" */;
 			buildPhases = (
+				B3717A0EF81B18671EED28E4 /* [CP] Check Pods Manifest.lock */,
 				BAA1327924F0F5120025C8C4 /* Sources */,
 				BAA1327A24F0F5120025C8C4 /* Frameworks */,
 				BAA1327B24F0F5120025C8C4 /* Resources */,
+				BE8482FC0321ECB61C2E8532 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3717A0EF81B18671EED28E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a207API-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8482FC0321ECB61C2E8532 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a207API/Pods-a207API-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-a207API/Pods-a207API-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-a207API/Pods-a207API-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BAA1327924F0F5120025C8C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA1329524F0F93E0025C8C4 /* APIModel.swift in Sources */,
 				BAA1328524F0F5120025C8C4 /* ViewController.swift in Sources */,
 				BAA1328124F0F5120025C8C4 /* AppDelegate.swift in Sources */,
 				BAA1328324F0F5120025C8C4 /* SceneDelegate.swift in Sources */,
@@ -282,6 +354,7 @@
 		};
 		BAA1329224F0F5140025C8C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6B69C0171DD9F1786D3A687 /* Pods-a207API.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +373,7 @@
 		};
 		BAA1329324F0F5140025C8C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39BBE70E16F1137DEAC319D0 /* Pods-a207API.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
