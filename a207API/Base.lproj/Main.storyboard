@@ -51,26 +51,35 @@
                                     <action selector="nextUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KH3-tZ-iq3"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="gCA-Ly-Dco">
+                                <rect key="frame" x="20" y="0.0" width="394" height="736"/>
+                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="0.56386451198630139" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="gCA-Ly-Dco" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="0iM-cV-TXU"/>
                             <constraint firstItem="q7w-W7-8Ua" firstAttribute="top" secondItem="k6d-ob-H0n" secondAttribute="bottom" constant="20" id="CiW-eA-7Mn"/>
                             <constraint firstItem="q7w-W7-8Ua" firstAttribute="leading" secondItem="k6d-ob-H0n" secondAttribute="leading" id="GcB-nX-Esp"/>
                             <constraint firstItem="35q-mK-xlx" firstAttribute="leading" secondItem="q7w-W7-8Ua" secondAttribute="leading" id="Ghj-tZ-Caf"/>
                             <constraint firstItem="lQ1-AZ-Vbe" firstAttribute="leading" secondItem="35q-mK-xlx" secondAttribute="leading" id="LkO-nD-tpB"/>
+                            <constraint firstItem="gCA-Ly-Dco" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OU6-sj-bVj"/>
                             <constraint firstItem="k6d-ob-H0n" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="W7U-gq-cqU"/>
                             <constraint firstItem="lQ1-AZ-Vbe" firstAttribute="top" secondItem="35q-mK-xlx" secondAttribute="bottom" constant="20" id="Zqq-xo-OAC"/>
                             <constraint firstItem="NRU-gJ-6Ld" firstAttribute="leading" secondItem="k6d-ob-H0n" secondAttribute="trailing" constant="20" id="bXU-rI-P2k"/>
                             <constraint firstItem="35q-mK-xlx" firstAttribute="top" secondItem="q7w-W7-8Ua" secondAttribute="bottom" constant="20" id="n9c-R9-JRw"/>
                             <constraint firstItem="k6d-ob-H0n" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="pvf-HL-HsH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gCA-Ly-Dco" secondAttribute="bottom" id="utI-Vz-xA7"/>
                             <constraint firstItem="k6d-ob-H0n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xDm-4x-lfF"/>
                             <constraint firstItem="NRU-gJ-6Ld" firstAttribute="bottom" secondItem="k6d-ob-H0n" secondAttribute="bottom" id="yVv-lP-f4j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gCA-Ly-Dco" secondAttribute="trailing" id="yn4-Wl-goH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="bigHade" destination="k6d-ob-H0n" id="XqW-pc-bvW"/>
                         <outlet property="emailL" destination="lQ1-AZ-Vbe" id="XJh-6e-ivI"/>
+                        <outlet property="ind" destination="gCA-Ly-Dco" id="hky-Ut-lmA"/>
                         <outlet property="nameL" destination="q7w-W7-8Ua" id="8Xb-tr-My7"/>
                         <outlet property="telL" destination="35q-mK-xlx" id="XQu-PO-w06"/>
                     </connections>
