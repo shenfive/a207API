@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 class ViewController: UIViewController {
 
@@ -14,7 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let model = APIModel.share
         model.queryRandomUser { (respons, error) in
-           
+            let json = JSON(respons as! Data)
+            print(json["results"].arrayValue[0]["name"]["first"].stringValue)
         }
         
     }

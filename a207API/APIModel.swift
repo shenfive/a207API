@@ -26,9 +26,17 @@ class APIModel{
                        method: .get,
                        parameters: nil,
                        encoding: URLEncoding.default,
-                       headers: nil).responseJSON { (respons) in
-                        let json = JSON(respons.data!)
-                        print(json)
+                       headers: nil)
+                
+                
+                .responseJSON { (respons) in
+                    
+                    if let error = respons.error{
+                        return completion(nil,error)
+                    }else{
+                        print("get!")
+                        return completion(respons.data,nil)
+                    }
             }
         
             
