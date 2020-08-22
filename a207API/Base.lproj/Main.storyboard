@@ -70,6 +70,9 @@
                     </view>
                     <connections>
                         <outlet property="bigHade" destination="k6d-ob-H0n" id="XqW-pc-bvW"/>
+                        <outlet property="emailL" destination="lQ1-AZ-Vbe" id="XJh-6e-ivI"/>
+                        <outlet property="nameL" destination="q7w-W7-8Ua" id="8Xb-tr-My7"/>
+                        <outlet property="telL" destination="35q-mK-xlx" id="XQu-PO-w06"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

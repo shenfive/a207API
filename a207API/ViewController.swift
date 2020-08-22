@@ -13,6 +13,9 @@ import Kingfisher
 class ViewController: UIViewController {
     @IBOutlet weak var bigHade: UIImageView!
     
+    @IBOutlet weak var emailL: UILabel!
+    @IBOutlet weak var telL: UILabel!
+    @IBOutlet weak var nameL: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUser()
@@ -32,6 +35,13 @@ class ViewController: UIViewController {
             if let url = URL(string: imageString){
                 self.bigHade.kf.setImage(with: url)
             }
+            self.telL.text = json["results"].arrayValue[0]["phone"].stringValue
+            let nameJson = json["results"].arrayValue[0]["name"]
+            self.nameL.text = "\(nameJson["title"].stringValue) \(nameJson["first"].stringValue) \(nameJson["last"].stringValue)"
+            self.emailL.text = json["results"].arrayValue[0]["email"].stringValue
+            
+            
+            
         }
     }
     
